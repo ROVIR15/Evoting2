@@ -73,8 +73,8 @@ contract Evoting {
         require(voters[_addr].voted==false);
         voteCount++;
         voteCommits[voteCount] = keccak256(abi.encodePacked(_vote));
-        token.approve(wallet, 1000000);
-        token.transferFrom(msg.sender, wallet, 1000000);
+        //token.approve(wallet, 1000000);
+        //token.transferFrom(msg.sender, wallet, 1000000);
       }
 
       /** Reveal Vote
